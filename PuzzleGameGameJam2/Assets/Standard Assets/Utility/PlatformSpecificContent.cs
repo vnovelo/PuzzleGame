@@ -20,7 +20,8 @@ namespace UnityStandardAssets.Utility
             Standalone,
             Mobile
         }
-
+        //disable warning about unassigned variable, as it is assigned by the serialization.
+#pragma warning disable CS0649
         [SerializeField]
         private BuildTargetGroup m_BuildTargetGroup;
         [SerializeField]
@@ -29,7 +30,8 @@ namespace UnityStandardAssets.Utility
         private MonoBehaviour[] m_MonoBehaviours = new MonoBehaviour[0];
         [SerializeField]
         private bool m_ChildrenOfThisObject;
-
+#pragma warning restore CS0649
+        
 #if !UNITY_EDITOR
 	void OnEnable()
 	{
@@ -72,7 +74,7 @@ namespace UnityStandardAssets.Utility
 
         private void CheckEnableContent()
         {
-#if (UNITY_IPHONE || UNITY_ANDROID || UNITY_WP8 || UNITY_TIZEN)
+#if (UNITY_IPHONE || UNITY_ANDROID || UNITY_WP8 || UNITY_TIZEN || UNITY_STV )
 		if (m_BuildTargetGroup == BuildTargetGroup.Mobile)
 		{
 			EnableContent(true);
@@ -81,7 +83,7 @@ namespace UnityStandardAssets.Utility
 		}
 #endif
 
-#if !(UNITY_IPHONE || UNITY_ANDROID || UNITY_WP8 || UNITY_TIZEN)
+#if !(UNITY_IPHONE || UNITY_ANDROID || UNITY_WP8 || UNITY_TIZEN || UNITY_STV )
             if (m_BuildTargetGroup == BuildTargetGroup.Mobile)
             {
                 EnableContent(false);

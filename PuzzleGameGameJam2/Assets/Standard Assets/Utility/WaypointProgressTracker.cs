@@ -11,6 +11,8 @@ namespace UnityStandardAssets.Utility
         // This script manages the amount to look ahead along the route,
         // and keeps track of progress and laps.
 
+        //disable warning about unassigned variable, as it is assigned by the serialization.
+#pragma warning disable CS0649
         [SerializeField] private WaypointCircuit circuit; // A reference to the waypoint-based route we should follow
 
         [SerializeField] private float lookAheadForTargetOffset = 5;
@@ -30,7 +32,8 @@ namespace UnityStandardAssets.Utility
 
         [SerializeField] private float pointToPointThreshold = 4;
         // proximity to waypoint which must be reached to switch target to next waypoint : only used in PointToPoint mode.
-
+#pragma warning restore CS0649
+        
         public enum ProgressStyle
         {
             SmoothAlongRoute,
