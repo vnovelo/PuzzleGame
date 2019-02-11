@@ -16,7 +16,7 @@ public class RayCastShooter : MonoBehaviour
     private AudioSource gunAudio;   //Gun Soun when firing ammo
 
     private float nextFire;         //Determines when the player can fire again
-    public Transform bulletPrefab;
+    //public Transform bulletPrefab;
    
     void Start()
     {
@@ -28,8 +28,8 @@ public class RayCastShooter : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire)
         {
-            bulletPrefab = Instantiate(bulletPrefab, gunEnd.transform.position, Quaternion.identity);
-            bulletPrefab.forward = gunEnd.transform.forward;
+            //bulletPrefab = Instantiate(bulletPrefab, gunEnd.transform.position, Quaternion.identity);
+            //bulletPrefab.forward = gunEnd.transform.forward;
             StartCoroutine(ShotEffect());  //Starting the Coroutine of shot effect
         }
 
