@@ -28,9 +28,8 @@ public class RayCastShooter : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire)
         {
-            Transform bullet1 = Instantiate(bulletPrefab, gunEnd.transform.position, Quaternion.identity);
-            bullet1.forward = gunEnd.transform.forward;
-            //bullet1.forward = Camera.main.transform.forward;
+            bulletPrefab = Instantiate(bulletPrefab, gunEnd.transform.position, Quaternion.identity);
+            bulletPrefab.forward = gunEnd.transform.forward;
             StartCoroutine(ShotEffect());  //Starting the Coroutine of shot effect
         }
 

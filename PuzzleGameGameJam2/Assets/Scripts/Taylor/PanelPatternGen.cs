@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PanelPatternGen : MonoBehaviour
 {
-    public GameObject[] PanelArray = new GameObject[9];
-    //public GameObject[] PanelsSorted = new GameObject[9];
+    public GameObject[] PanelArray = new GameObject[25];
+    //public GameObject[] PanelsSorted = new GameObject[25];
 
     void Start()
     {
