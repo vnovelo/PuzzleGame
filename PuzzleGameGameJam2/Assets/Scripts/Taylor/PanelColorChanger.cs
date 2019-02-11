@@ -37,10 +37,10 @@ public class PanelColorChanger : MonoBehaviour
             other.gameObject.SetActive(false);
 
             Renderer bulletRend = other.GetComponent<Renderer>();
-
+ 
             if (rend.material.color.Equals(Color.white))
             {
-                // THE PANEL IS WHITE
+                // THE PANEL IS WHITES
                 // SET PANEL TO BULLET COLOR
                 //rend.material.color = bulletRend.material.color;
 
