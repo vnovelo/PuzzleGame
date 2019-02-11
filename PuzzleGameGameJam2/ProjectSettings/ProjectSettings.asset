@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 00000000000000000000000000000000
+  productGUID: 814b526ec372bc94e9fe3dd54e99af66
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -682,7 +682,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: 2b47b6ab-df8c-425c-b1c5-c86a5e029652
   framebufferDepthMemorylessMode: 0
-  projectName: 
+  projectName: PuzzleGameGameJam2
   organizationId: vnovelo
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
