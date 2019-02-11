@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 6454829471543327521}
   - component: {fileID: 6454829471543327520}
   - component: {fileID: 6454829471543327523}
-  - component: {fileID: 6454829471543327535}
   - component: {fileID: 6454829471543327532}
-  - component: {fileID: 4038530995419006422}
+  - component: {fileID: 1767837012307596989}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Panel
@@ -94,22 +93,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6454829471543327535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6454829471543327522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9e3ca089369467c9c60e3e37612442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 7632005950953186412, guid: 0ff56deb6605f4f6abc6e90de6aa6fe0,
-    type: 3}
-  rend: {fileID: 0}
-  PanelID: 0
 --- !u!54 &6454829471543327532
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -124,9 +107,9 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
---- !u!114 &4038530995419006422
+--- !u!114 &1767837012307596989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,7 +118,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6454829471543327522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b1f907ca0f124bb9999dae9d2a1ccbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 86412852270b54a19a547f8db3a9fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PanelArray: []
+  bulletPrefab: {fileID: 7632005950953186412, guid: 35aaf383bb7574844ba600bc88423dce,
+    type: 3}
+  rend: {fileID: 0}
+  PanelID: 0
