@@ -12,7 +12,7 @@ public class BulletMove : MonoBehaviour
 
     //public GameObject Gun;
 
-    private Renderer rend;
+    Renderer rend;
 
     Vector3 moveForward = new Vector3(0.0f, 0.0f, 1.0f);
 
@@ -22,11 +22,6 @@ public class BulletMove : MonoBehaviour
         startTime = Time.time;
         //Get the renderer of the object so we can access the color
         rend = GetComponent<Renderer>();
-        //Set the initial color to white
-        rend.material.color = Color.white;
-
-        // MAKE BULLET SAME COLOR AS CURRENT GUN COLOR
-
     }
 
     // Update is called once per frame
@@ -42,20 +37,20 @@ public class BulletMove : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if(Input.GetKeyDown(KeyCode.H)) {
-            rend.material.color = Color.red;
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            rend.material.color = Color.blue;
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            rend.material.color = Color.yellow;
-        }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            rend.material.color = Color.white;
-        }
+        //if(Input.GetKeyDown(KeyCode.H)) {
+        //    rend.material.color = Color.red;
+        //}
+        //if (Input.GetKeyDown(KeyCode.J))
+        //{
+        //    rend.material.color = Color.blue;
+        //}
+        //if (Input.GetKeyDown(KeyCode.K))
+        //{
+        //    rend.material.color = Color.yellow;
+        //}
+        //if (Input.GetKeyDown(KeyCode.L))
+        //{
+        //    rend.material.color = Color.white;
+        //}
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class RayCastShooter : MonoBehaviour
 {
 
-    
     public float fireRate = 0.25f;          //Sets the fire rate of the gun
     public Transform gunEnd;        //Marks the postion at which out laser line begins
     public float weaponRange = 50f;

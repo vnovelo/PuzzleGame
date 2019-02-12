@@ -7,6 +7,10 @@ TagManager:
   - Shootable
   - Bullet
   - Panel
+  - Red
+  - Yellow
+  - Blue
+  - White
   layers:
   - Default
   - TransparentFX
@@ -17,7 +21,7 @@ TagManager:
   - 
   - 
   - Lighting
-  - 
+  - Clickable
   - 
   - 
   - 
